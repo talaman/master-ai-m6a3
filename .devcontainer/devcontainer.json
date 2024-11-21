@@ -1,0 +1,17 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.9-bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
+		}
+	},
+	"runArgs": [
+		"--gpus=all"
+	], 
+	"postCreateCommand": [
+    	"nvidia-smi"
+  	]
+}
